@@ -8,15 +8,15 @@ using BeautyCarePlus_App_ASP.ViewModels;
 
 namespace BeautyCarePlus_App_ASP.Controllers
 {
-    public class GebruikerController : Controller
+    public class UserController : Controller
     {
-        public ActionResult GebruikerLoginView()
+        public ActionResult UserLoginView()
         {
-            var viewModel = new GebruikerLoginViewModel();
+            var viewModel = new UserLoginViewModel();
             return View(viewModel);
         }
 
-        public ActionResult LogIn(Gebruiker gebruiker)
+        public ActionResult LogIn(User user)
         {
 
             return Content("GebruikerLogin wordt nog niet geredirect");
