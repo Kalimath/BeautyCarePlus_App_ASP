@@ -1,0 +1,23 @@
+﻿@using System.Activities.Expressions
+@using System.Web.Mvc.Html
+@model BeautyCarePlus_App_ASP.ViewModels.GebruikerLoginViewModel
+@{
+    ViewBag.Title = "Log In";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Gebruiker login</h2>
+
+@using (Html.BeginForm("LogIn", "Gebruiker"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Paswoord)
+        @Html.TextBoxFor(m => m.Paswoord, new {@class = "form-control"})
+    </div>
+    <button type="submit" class="btn btn-primary">Log in</button>
+}
+
