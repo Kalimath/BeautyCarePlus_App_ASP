@@ -1,0 +1,27 @@
+﻿@model BeautyCarePlus_App_ASP.ViewModels.CustomersListViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Klanten</h2>
+
+@if (Model.CustomerList.Count == 0)
+{
+    <text>Geen klanten om weer te geven.</text>
+}
+else
+{
+<ul>
+    @foreach (var customer in Model.CustomerList)
+    {
+        <li>@customer.Name</li>
+        <li>@customer.Adres</li>
+        <li>@customer.BirthDate</li>
+        <li>@customer.InitialWeight</li>
+    }
+</ul>  
+}
+
+
+

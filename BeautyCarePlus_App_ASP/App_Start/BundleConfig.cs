@@ -23,8 +23,9 @@ namespace BeautyCarePlus_App_ASP
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      //"~/Content/bootstrap-lux.css",
+                      //"~/Content/bootstrap.css",
+                      "~/Content/bootstrap-lux.css",
+                      //"~/Content/bootstrap-lumen.css",
                       "~/Content/site.css"));
         }
     }
